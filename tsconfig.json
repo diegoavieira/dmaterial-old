@@ -15,7 +15,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@dmaterial/doc/home": ["libs/doc/home/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
