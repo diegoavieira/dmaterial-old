@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dmaterial/doc/home": ["libs/doc/home/src/index.ts"]
+      "@dmaterial/doc/home": ["libs/doc/home/src/index.ts"],
+      "@dmaterial/toolbar": ["libs/toolbar/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
