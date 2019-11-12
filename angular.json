@@ -125,7 +125,7 @@
       "projectType": "library",
       "root": "libs/doc/home",
       "sourceRoot": "libs/doc/home/src",
-      "prefix": "doc",
+      "prefix": "dm",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
