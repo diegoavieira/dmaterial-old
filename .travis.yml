@@ -1,26 +1,19 @@
-dist: xenial
-sudo: false
-
 language: node_js
 node_js:
   - '10'
-
-cache:
-  directories:
-    - ./node_modules
-
-install:
-  - npm install
-
+dist: trusty
+sudo: required
+branches:
+only:
+  - master
+before_script:
+  - npm install -g @angular/cli
 script:
-  - npm run-script build
-  - cd dist/apps/doc
-  - cp index.html 404.html
-
+  - ng build --prod --base-href https://diegoavieira.github.io/dmaterial/
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: dist/apps/doc
+  local_dir: dist/apps/doc/
   on:
     branch: master
