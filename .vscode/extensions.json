@@ -6,7 +6,6 @@
     "esbenp.prettier-vscode",
     "pkief.material-icon-theme",
     "christian-kohler.path-intellisense",
-    "ban.spellright",
     "johnpapa.angular-essentials"
   ]
 }
