@@ -1,19 +1,19 @@
-dist: xenial
-sudo: false
-
 language: node_js
 node_js:
   - '10'
 
-cache:
-  directories:
-    - ./node_modules
+dist: trusty
+sudo: required
 
-install:
-  - npm install
+branches:
+only:
+  - master
+
+before_script:
+  - npm install -g @angular/cli
 
 script:
-  - npm run-script build --prod --base-href https://diegoavieira.github.io/dmaterial/
+  - ng build --prod --base-href https://diegoavieira.github.io/dmaterial/
   - cd dist/apps/doc
   - cp index.html 404.html
 
